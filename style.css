@@ -101,11 +101,25 @@ a:focus-visible { outline: none; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   overflow: hidden;
+  position: relative;
 }
 .photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* credit on the grass, bottom-left of the profile photo */
+.photo-credit {
+  position: absolute;
+  left: 2.5px;
+  bottom: 2px;
+  font-size: 4px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
 }
 .contacts {
   margin-top: 1.25rem;
@@ -243,6 +257,33 @@ a:focus-visible { outline: none; }
 .topic-text p a { border-bottom-color: var(--accent); }
 .topic-text p a:hover,
 .topic-text p a:focus-visible { border-bottom-color: var(--accent-text); }
+
+/* Full-width photo at the bottom of the home page */
+/* 4rem gap plus half the banner height */
+.banner {
+  margin-top: calc(4rem + clamp(60px, 6.75vw, 112.5px));
+  position: relative;
+}
+.banner img {
+  display: block;
+  width: 100%;
+  /* short strip: crop top/bottom, keeping the horizon and waves in view */
+  height: clamp(120px, 13.5vw, 225px);
+  object-fit: cover;
+  object-position: center 38%;
+}
+/* credit in the bottom-right corner of the banner */
+.banner-credit {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  font-size: 0.56rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.75);
+}
+.banner + footer { margin-top: 0; }
 
 footer {
   margin-top: 4rem;
