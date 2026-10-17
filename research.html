@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Luolin Sun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=38">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-name">Luolin Sun</div>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section class="research" id="research">
+    <h2 class="research-title">Research</h2>
+    <div class="topics">
+
+      <div class="topic-row">
+        <div class="topic-media">
+          <div class="topic-figure"><img src="img/arctic-warming.png" alt="Arctic Ocean warming"></div>
+          <p class="topic-caption">Decadal trend of sea surface temperature anomaly (°C per decade) in the Arctic Ocean and subpolar North Atlantic, from a 1/12° HYCOM historical simulation over 1980–2023.</p>
+        </div>
+        <div class="topic-text">
+          <h3>Arctic Ocean Warming</h3>
+          <p>The Arctic Ocean is experiencing rapid warming, with consequences extending beyond the Arctic itself. The large-scale impacts of this transformation are closely linked to the subpolar North Atlantic through exchanges of heat and freshwater: warmer, saltier Atlantic Water carries heat northward into the Arctic, while colder, fresher water is exported southward. However, the key physical processes governing these exchanges are not yet fully understood.</p>
+          <p>With a focus on the Atlantic Meridional Overturning Circulation, I use high-resolution ocean simulations to study changes in heat and freshwater transport across major sections from the subpolar North Atlantic to the Arctic gateways.</p>
+        </div>
+      </div>
+
+      <div class="topic-row">
+        <div class="topic-media">
+          <div class="topic-figure"><img src="img/mode-water.png" alt="Subtropical mode water"></div>
+          <p class="topic-caption">Schematic of STMW formation in its core isopycnal layer (Sun et al., 2026). Arrows show how the residual-mean (orange), residual-eddy (green), diabatic (cyan) and bolus (pink) PV fluxes maintain the low-PV pool (outlined in black).</p>
+        </div>
+        <div class="topic-text">
+          <h3>Subtropical Mode Water</h3>
+          <p>Ventilated each winter, North Atlantic Subtropical Mode Water (STMW) carries the imprint of atmospheric conditions into the ocean interior. Its formation is generally attributed to a balance between mean-circulation and down-gradient eddy transport of potential vorticity (PV), but how the two interact in space and time has not been explicitly diagnosed.</p>
+          <p>Presenting the first fully space- and time-dependent diagnosis of STMW formation and erosion, we find that strong western boundary current dynamics play the dominant role in maintaining STMW, with residual eddies playing a secondary role (Sun et al., 2026, accepted).</p>
+          <p>Interestingly, we also find a partial cancellation between Eulerian-mean and bolus-eddy flows within the STMW region, similar to that in the Antarctic Circumpolar Current. Happy to discuss this further with anyone interested!</p>
+        </div>
+      </div>
+
+      <div class="topic-row">
+        <div class="topic-media">
+          <div class="topic-figure"><img src="img/eddy-transport.png" alt="Eddy-induced passive tracer transport"></div>
+          <p class="topic-caption">Components of the eddy transport tensor estimated from multiple passive tracers: (a, b) the two eigenvalues of the diffusion tensor, whose opposite signs (polarity) indicate simultaneous down- and up-gradient transport; (c) isotropic diffusivity; and (d) advective coefficient.</p>
+        </div>
+        <div class="topic-text">
+          <h3>Eddy Tracer Transport</h3>
+          <p>Mesoscale eddies stir and mix heat, carbon, and nutrients throughout the ocean, influencing large-scale ocean circulation, stratification, and biogeochemical processes. Their transport effects are usually parameterised because climate models can be too coarse to resolve them. Eddy diffusivity is commonly assumed to be a unique property of the flow, independent of the tracer being transported. But how valid is this assumption?</p>
+          <p>To test this, I used an idealised eddy-resolving quasi-geostrophic model to estimate the full eddy transport tensor (K-tensor) for multiple passive tracers and measure its tracer dependence (<a href="https://doi.org/10.1017/jfm.2021.472" target="_blank" rel="noopener">Sun et al., 2021</a>). With collaborators, I also explored its spatial inhomogeneity, anisotropy, and advective component (<a href="https://doi.org/10.1016/j.dsr.2020.103264" target="_blank" rel="noopener">Haigh et al., 2020</a>, <a href="https://doi.org/10.1016/j.ocemod.2021.101831" target="_blank" rel="noopener">2021a</a>, <a href="https://doi.org/10.1016/j.ocemod.2021.101845" target="_blank" rel="noopener">2021b</a>; <a href="https://doi.org/10.1029/2020GL091719" target="_blank" rel="noopener">Kamenkovich et al., 2021</a>), identifying key properties that should be represented in eddy parameterisations.</p>
+        </div>
+      </div>
+
+      <!-- HIDDEN: Ensemble Ocean Simulations (temporarily removed from the site).
+           To restore, delete these two lines and the END HIDDEN line below.
+      <div class="topic-row">
+        <div class="topic-media">
+          <div class="topic-figure">FIGURE</div>
+        </div>
+        <div class="topic-text">
+          <h3>Ensemble Ocean Simulations</h3>
+          <p>To achieve this, I applied a novel time-varying covariant-coordinate framework (<a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021MS002866" target="_blank" rel="noopener">Uchida et al., 2022</a>) to STMW PV analysis, which combines thickness-weighted averaging (<a href="https://journals.ametsoc.org/view/journals/phoc/42/5/jpo-d-11-0102.1.xml" target="_blank" rel="noopener">Young, 2012</a>) with an ensemble approach (<a href="https://doi.org/10.1175/jcli-d-11-00077.1" target="_blank" rel="noopener">Penduff et al., 2011</a>; <a href="https://doi.org/10.1029/2019GL082552" target="_blank" rel="noopener">Jamet et al., 2019</a>).</p>
+        </div>
+      </div>
+      END HIDDEN: Ensemble Ocean Simulations -->
+
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">© 2026 Luolin Sun</div>
+</footer>
+
+<script>
+  // Give every research caption the height of the tallest one, then every
+  // research row the height of the tallest row, so all rows match and figures
+  // sit at the same position. Skipped on narrow screens, where rows stack.
+  (function () {
+    var caps = document.querySelectorAll('.topic-caption');
+    var rows = document.querySelectorAll('.topic-row');
+    var narrow = window.matchMedia('(max-width: 700px)');
+    function matchHeights(els) {
+      var h = 0;
+      els.forEach(function (e) { h = Math.max(h, e.offsetHeight); });
+      els.forEach(function (e) { e.style.minHeight = h + 'px'; });
+    }
+    function equalize() {
+      caps.forEach(function (c) { c.style.minHeight = ''; });
+      rows.forEach(function (r) { r.style.minHeight = ''; });
+      if (narrow.matches) return;
+      matchHeights(caps);
+      matchHeights(rows);
+    }
+    window.addEventListener('load', equalize);
+    window.addEventListener('resize', equalize);
+    if (document.fonts) document.fonts.ready.then(equalize);
+  })();
+</script>
+</body>
+</html>
